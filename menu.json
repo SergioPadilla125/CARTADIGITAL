@@ -1,0 +1,95 @@
+{
+  "cafes": [
+    {
+      "name": "Espresso",
+      "description": "Intenso, equilibrado y aromático.",
+      "price": 1800,
+      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Americano",
+      "description": "Café diluido en agua caliente.",
+      "price": 1900,
+      "image": "https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Cappuccino",
+      "description": "Espresso con leche vaporizada y espuma.",
+      "price": 2400,
+      "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Latte",
+      "description": "Leche vaporizada con un toque de espresso.",
+      "price": 2400,
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Mocha",
+      "description": "Chocolate, espresso y leche vaporizada.",
+      "price": 2700,
+      "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Cold Brew",
+      "description": "Café frío, suave y refrescante.",
+      "price": 2900,
+      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "V60",
+      "description": "Método de filtrado que resalta los sabores del origen.",
+      "price": 3200,
+      "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "desayunos": [
+    {
+      "name": "Tostadas clásicas",
+      "description": "Pan de campo, palta, huevo poche y semillas.",
+      "price": 3800
+    },
+    {
+      "name": "Yogur con granola",
+      "description": "Yogur natural, granola casera, frutas de estación y miel.",
+      "price": 3200
+    },
+    {
+      "name": "Medialunas",
+      "description": "Mantecosas y crocantes, recién horneadas.",
+      "price": 2200
+    },
+    {
+      "name": "Avocado Toast",
+      "description": "Pan de masa madre, palta, tomate cherry y semillas.",
+      "price": 4200
+    }
+  ],
+  "pasteleria": [
+    {
+      "name": "Cheesecake",
+      "description": "Cremoso cheesecake con salsa de frutos rojos.",
+      "price": 3600
+    },
+    {
+      "name": "Brownie",
+      "description": "Con nueces y chocolate semiamargo.",
+      "price": 3200
+    },
+    {
+      "name": "Lemon Pie",
+      "description": "Curd de limón con merengue italiano.",
+      "price": 3400
+    },
+    {
+      "name": "Cookie artesanal",
+      "description": "Cookie con chips de chocolate.",
+      "price": 2200
+    },
+    {
+      "name": "Cookie Red Velvet",
+      "description": "Galleta de chocolate rojo con chips de chocolate blanco.",
+      "price": 0
+    }
+  ]
+}
