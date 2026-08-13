@@ -1,2 +1,521 @@
-:root{--bg:#11100e;--panel:#191714;--cream:#efe0c9;--gold:#b99869;--muted:#bdb4a7;--line:#5e4a31}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Montserrat,Arial,sans-serif}.nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:18px 6%;background:rgba(17,16,14,.94);backdrop-filter:blur(12px);border-bottom:1px solid #2e2922}.brand{font-family:"Cormorant Garamond",serif;font-size:34px;font-style:italic;color:var(--cream);text-decoration:none;line-height:.75}.brand span{display:block;font-family:Montserrat,sans-serif;font-size:9px;letter-spacing:4px;font-style:normal;text-align:center;margin-top:9px}.nav nav{display:flex;gap:28px}.nav nav a{color:var(--cream);text-decoration:none;font-size:12px;letter-spacing:1px}.hero{min-height:82vh;display:flex;align-items:center;padding:80px 8%;background:linear-gradient(90deg,rgba(10,9,8,.92),rgba(10,9,8,.42)),url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=85") center/cover}.hero-copy{max-width:720px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:4px;font-weight:600}.hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,7vw,88px);line-height:.92;font-weight:500;margin:22px 0}.hero h1 em{font-weight:500}.hero p:not(.eyebrow){color:#ded5c8;max-width:520px;line-height:1.8}.button{display:inline-block;margin-top:25px;padding:14px 25px;border:1px solid var(--gold);color:var(--cream);text-decoration:none;font-size:11px;letter-spacing:2px}.intro,.menu-section,.visit{max-width:1180px;margin:auto;padding:90px 6%}.intro{text-align:center;max-width:850px}.intro h2,.visit h2{font-family:"Cormorant Garamond",serif;font-size:48px;font-weight:500;margin:10px 0}.intro p:last-child{color:var(--muted);line-height:1.8}.section-title{display:flex;align-items:end;gap:18px;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:28px}.section-title span{color:var(--gold);font-size:11px}.section-title h2{font-family:"Cormorant Garamond",serif;font-size:42px;font-weight:500;margin:0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:var(--panel);border:1px solid #332a20}.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}.card-body{padding:17px}.card-top{display:flex;justify-content:space-between;gap:10px}.card h3,.list-card h3{margin:0;font-size:14px;letter-spacing:1px;text-transform:uppercase}.card strong,.list-card strong{color:var(--gold);white-space:nowrap}.card p,.list-card p{color:var(--muted);font-size:12px;line-height:1.6;margin-bottom:0}.alt{background:#161411;max-width:none;padding-left:calc((100% - 1180px)/2 + 6%);padding-right:calc((100% - 1180px)/2 + 6%)}.list-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}.list-card{background:var(--bg);padding:25px;display:flex;justify-content:space-between;gap:20px}.visit{display:grid;grid-template-columns:1fr 1fr;gap:50px;border-top:1px solid var(--line)}.visit h2{font-size:34px}.visit p:not(.eyebrow){color:var(--muted);line-height:1.7}footer{padding:50px 6%;text-align:center;border-top:1px solid #302920;color:var(--muted)}footer .brand{display:inline-block}footer p{font-size:11px;margin-top:25px}@media(max-width:800px){.nav nav{display:none}.hero{min-height:72vh;padding:70px 7%}.grid{grid-template-columns:1fr 1fr}.list-grid,.visit{grid-template-columns:1fr}.alt{padding-left:7%;padding-right:7%}.intro,.menu-section,.visit{padding-top:65px;padding-bottom:65px}.section-title h2{font-size:34px}}@media(max-width:520px){.grid{grid-template-columns:1fr}.hero h1{font-size:52px}.card img{aspect-ratio:4/3}}
+/* ========================================
+   VARIABLES
+======================================== */
+
+:root {
+    --bg: #11100e;
+    --panel: #191714;
+    --cream: #efe0c9;
+    --gold: #b99869;
+    --muted: #bdb4a7;
+    --line: #5e4a31;
+}
+
+
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--cream);
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+
+/* ========================================
+   NAVEGACIÓN
+======================================== */
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 6%;
+
+    background: rgba(17, 16, 14, 0.94);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #2e2922;
+}
+
+
+/* Logo */
+
+.brand {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-style: italic;
+    color: var(--cream);
+    text-decoration: none;
+    line-height: 0.75;
+}
+
+.brand span {
+    display: block;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+    font-style: normal;
+    text-align: center;
+
+    margin-top: 9px;
+}
+
+
+/* Links del menú */
+
+.nav nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav nav a {
+    color: var(--cream);
+    text-decoration: none;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   HERO / INICIO
+======================================== */
+
+.hero {
+    min-height: 82vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 9, 8, 0.92),
+            rgba(10, 9, 8, 0.42)
+        ),
+        url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+}
+
+.hero-copy {
+    max-width: 720px;
+}
+
+
+/* Texto pequeño superior */
+
+.eyebrow {
+    color: var(--gold);
+
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+
+/* Título principal */
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(48px, 7vw, 88px);
+    line-height: 0.92;
+    font-weight: 500;
+
+    margin: 22px 0;
+}
+
+.hero h1 em {
+    font-weight: 500;
+}
+
+
+/* Descripción */
+
+.hero p:not(.eyebrow) {
+    color: #ded5c8;
+
+    max-width: 520px;
+
+    line-height: 1.8;
+}
+
+
+/* Botón */
+
+.button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 14px 25px;
+
+    border: 1px solid var(--gold);
+
+    color: var(--cream);
+    text-decoration: none;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* ========================================
+   INTRODUCCIÓN
+======================================== */
+.brand img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+.intro {
+    max-width: 850px;
+
+    margin: auto;
+    padding: 90px 6%;
+
+    text-align: center;
+}
+
+.intro h2,
+.visit h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 48px;
+    font-weight: 500;
+
+    margin: 10px 0;
+}
+
+.intro p:last-child {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   SECCIONES DE LA CARTA
+======================================== */
+
+.menu-section {
+    max-width: 1180px;
+
+    margin: auto;
+    padding: 90px 6%;
+}
+
+
+/* Título de sección */
+
+.section-title {
+    display: flex;
+    align-items: end;
+    gap: 18px;
+
+    border-bottom: 1px solid var(--line);
+
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+}
+
+.section-title span {
+    color: var(--gold);
+    font-size: 11px;
+}
+
+.section-title h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 42px;
+    font-weight: 500;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   CARTAS CON IMAGEN
+======================================== */
+
+.grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* Tarjeta */
+
+.card {
+    background: var(--panel);
+
+    border: 1px solid #332a20;
+}
+
+
+/* Imagen */
+
+.card img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Contenido */
+
+.card-body {
+    padding: 17px;
+}
+
+
+/* Nombre + precio */
+
+.card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+/* Título */
+
+.card h3,
+.list-card h3 {
+    margin: 0;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* Precio */
+
+.card strong,
+.list-card strong {
+    color: var(--gold);
+
+    white-space: nowrap;
+}
+
+
+/* Descripción */
+
+.card p,
+.list-card p {
+    color: var(--muted);
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   SECCIÓN ALTERNATIVA
+======================================== */
+
+.alt {
+    background: #161411;
+
+    max-width: none;
+
+    padding-left: calc((100% - 1180px) / 2 + 6%);
+    padding-right: calc((100% - 1180px) / 2 + 6%);
+}
+
+
+/* ========================================
+   LISTA DE PRODUCTOS
+======================================== */
+
+.list-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1px;
+
+    background: var(--line);
+}
+
+.list-card {
+    background: var(--bg);
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* ========================================
+   SECCIÓN VISITANOS / INFORMACIÓN
+======================================== */
+
+.visit {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    border-top: 1px solid var(--line);
+}
+
+.visit h2 {
+    font-size: 34px;
+}
+
+.visit p:not(.eyebrow) {
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    padding: 50px 6%;
+
+    text-align: center;
+
+    border-top: 1px solid #302920;
+
+    color: var(--muted);
+}
+
+footer .brand {
+    display: inline-block;
+}
+
+footer p {
+    font-size: 11px;
+
+    margin-top: 25px;
+}
+
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media (max-width: 800px) {
+
+    /* Navegación */
+
+    .nav nav {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 72vh;
+
+        padding: 70px 7%;
+    }
+
+
+    /* Productos */
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* Listas */
+
+    .list-grid,
+    .visit {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Sección alternativa */
+
+    .alt {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+
+    /* Espaciado */
+
+    .intro,
+    .menu-section,
+    .visit {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+
+    /* Títulos */
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE - CELULAR
+======================================== */
+
+@media (max-width: 520px) {
+
+    /* Productos */
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Hero */
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+
+    /* Imágenes */
+
+    .card img {
+        aspect-ratio: 4 / 3;
+    }
+}

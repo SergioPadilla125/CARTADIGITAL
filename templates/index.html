@@ -12,7 +12,10 @@
 </head>
 <body>
 <header class="nav">
-  <a class="brand" href="#inicio">Prego<span>— CAFETERÍA —</span></a>
+<a class="brand" href="#inicio">
+  <img src="{{ url_for('static', filename='logo_prego.png') }}" alt="Logo Prego">
+</a>
+
   <nav>
     <a href="#cafes">Cafés</a>
     <a href="#desayunos">Desayunos</a>
@@ -37,7 +40,7 @@
   </section>
 
   <section id="cafes" class="menu-section">
-    <div class="section-title"><span>01</span><h2>Cafés de especialidad</h2></div>
+    <div class="section-title"><span></span><h2>Cafés de especialidad</h2></div>
     <div class="grid">
       {% for item in menu.cafes %}
       <article class="card">
@@ -52,7 +55,7 @@
   </section>
 
   <section id="desayunos" class="menu-section alt">
-    <div class="section-title"><span>02</span><h2>Desayunos & brunch</h2></div>
+    <div class="section-title"><span></span><h2>Desayunos & brunch</h2></div>
     <div class="list-grid">
       {% for item in menu.desayunos %}
       <article class="list-card">
@@ -64,7 +67,7 @@
   </section>
 
   <section id="pasteleria" class="menu-section">
-    <div class="section-title"><span>03</span><h2>Pastelería artesanal</h2></div>
+    <div class="section-title"><span></span><h2>Pastelería artesanal</h2></div>
     <div class="list-grid">
       {% for item in menu.pasteleria %}
       <article class="list-card">
