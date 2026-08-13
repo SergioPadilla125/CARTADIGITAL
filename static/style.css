@@ -520,7 +520,7 @@ footer p {
 
     /* Hero (Aquí forzamos la altura completa para el celular) */
     .hero {
-        height: 90dvh !important;
+        height: 95dvh !important;
     }
 
     .hero h1 {
