@@ -514,21 +514,20 @@ footer p {
 @media (max-width: 520px) {
 
     /* Productos */
-
     .grid {
         grid-template-columns: 1fr;
     }
 
-
-    /* Hero */
+    /* Hero (Aquí forzamos la altura completa para el celular) */
+    .hero {
+        height: 100vh !important;
+    }
 
     .hero h1 {
         font-size: 52px;
     }
 
-
     /* Imágenes */
-
     .card img {
         aspect-ratio: 4 / 3;
     }
