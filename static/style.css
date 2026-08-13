@@ -99,12 +99,11 @@ body {
 
 .hero {
     min-height: 82vh;
-
     display: flex;
     align-items: center;
-
+    justify-content: center; /* Centra todo horizontalmente */
+    text-align: center;      /* Centra el texto */
     padding: 80px 8%;
-
     background:
         linear-gradient(
             90deg,
@@ -117,8 +116,11 @@ body {
 
 .hero-copy {
     max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que el botón quede bien centrado */
+    animation: fadeInUp 1s ease-out forwards; /* Llama a la animación */
 }
-
 
 /* Texto pequeño superior */
 
