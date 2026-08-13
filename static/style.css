@@ -40,31 +40,29 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 18px 6%;
-
+    
+    /* Reducimos el padding vertical de 18px a 12px para achicar la barra */
+    padding: 12px 6%; 
+    
     background: rgba(17, 16, 14, 0.94);
     backdrop-filter: blur(12px);
-
     border-bottom: 1px solid #2e2922;
 }
 
+/* ========================================
+   LOGO
+======================================== */
 
-/* Logo */
-
-.brand {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 34px;
-    font-style: italic;
-    color: var(--cream);
-    text-decoration: none;
-    line-height: 0.75;
+.brand img {
+    /* Forzamos una altura máxima pequeña para que el espacio transparente no infle la barra */
+    height: 45px; 
+    width: auto; /* El ancho se calcula automáticamente para no deformarse */
+    display: block;
+    object-fit: contain; 
 }
-
 .brand span {
     display: block;
 
@@ -156,7 +154,7 @@ body {
 
     max-width: 520px;
 
-    line-height: 1.8;
+    line-height: 2;
 }
 
 
