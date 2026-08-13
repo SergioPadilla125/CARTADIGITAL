@@ -18,7 +18,7 @@
 
   <nav>
     <a href="#cafes">Cafés</a>
-    <a href="#desayunos">Desayunos</a>
+    <a href="#promocion">Promociones</a>
     <a href="#pasteleria">Pastelería</a>
   </nav>
 </header>
@@ -56,10 +56,10 @@
     </div>
   </section>
 
-  <section id="desayunos" class="menu-section alt">
-    <div class="section-title"><span></span><h2>Desayunos & brunch</h2></div>
+  <section id="promocion" class="menu-section alt">
+    <div class="section-title"><span></span><h2>Promociones</h2></div>
     <div class="list-grid">
-      {% for item in menu.desayunos %}
+      {% for item in menu.promocion %}
       <article class="list-card">
         <div><h3>{{ item.name }}</h3><p>{{ item.description }}</p></div>
         <strong>${{ "{:,}".format(item.price).replace(",", ".") }}</strong>

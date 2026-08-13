@@ -40,18 +40,22 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     
-    /* Reducimos el padding vertical de 18px a 12px para achicar la barra */
-    padding: 12px 6%; 
+    display: flex;
+    justify-content: flex-start; /* Esto empuja los enlaces hacia la izquierda */
+    align-items: center;
+    
+    padding: 15px 8%; /* Puedes achicar el 8% si lo quieres más pegado al borde izquierdo */
     
     background: rgba(17, 16, 14, 0.94);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid #2e2922;
 }
 
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
 
 /* Logo */
 
@@ -512,23 +516,23 @@ footer p {
 ======================================== */
 
 @media (max-width: 520px) {
+    
+    /* ... acá dejas tu código del hero que pusimos antes ... */
 
-    /* Productos */
-    .grid {
-        grid-template-columns: 1fr;
+    /* 1. Centramos la barra en el celular */
+    .nav {
+        justify-content: center;
+        padding: 12px 2%; /* Menos espacio a los costados para que entre todo */
     }
 
-    /* Hero (Aquí forzamos la altura completa para el celular) */
-    .hero {
-        height: 95vh !important;
+    /* 2. Mostramos los enlaces y achicamos la separación */
+    .nav-links {
+        display: flex; /* Esto vuelve a mostrar los textos que antes estaban ocultos */
+        gap: 15px;     /* Reduce el espacio entre cada palabra */
     }
 
-    .hero h1 {
-        font-size: 52px;
-    }
-
-    /* Imágenes */
-    .card img {
-        aspect-ratio: 4 / 3;
+    /* 3. Achicamos apenitas la letra para que entren en una sola línea */
+    .nav-links a {
+        font-size: 11px; 
     }
 }
