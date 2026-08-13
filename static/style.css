@@ -103,7 +103,7 @@ body {
     align-items: center;
     justify-content: center; /* Centra todo horizontalmente */
     text-align: center;      /* Centra el texto */
-    padding: 100px 8%;
+    padding: 80px 8%;
     background:
         linear-gradient(
             90deg,
