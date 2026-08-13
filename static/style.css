@@ -98,7 +98,7 @@ body {
 ======================================== */
 
 .hero {
-    min-height: 82vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center; /* Centra todo horizontalmente */
