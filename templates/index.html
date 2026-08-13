@@ -13,7 +13,7 @@
 <body>
 <header class="nav">
 <a class="brand" href="#inicio">
-  <img src="{{ url_for('static', filename='logo_prego.png') }}" alt="Logo Prego">
+  
 </a>
 
   <nav>
@@ -26,7 +26,9 @@
 <main>
   <section id="inicio" class="hero">
     <div class="hero-copy">
-      <p class="eyebrow">CAFÉ DE ESPECIALIDAD</p>
+      <!-- Aquí insertamos tu logo centrado -->
+      <img src="{{ url_for('static', filename='logo_prego.png') }}" alt="Logo Prego" class="hero-logo">
+      
       <h1>Café de especialidad,<br><em>hecho para momentos increíbles.</em></h1>
       <p>Granos seleccionados · Preparaciones artesanales · Pastelería artesanal</p>
       <a class="button" href="#cafes">VER CARTA</a>

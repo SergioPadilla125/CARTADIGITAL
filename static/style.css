@@ -121,7 +121,16 @@ body {
     align-items: center; /* Asegura que el botón quede bien centrado */
     animation: fadeInUp 1s ease-out forwards; /* Llama a la animación */
 }
+/* Logo gigante en la sección de inicio */
 
+.hero-logo {
+    height: 90px; /* Sube este valor para hacerlo del tamaño que quieras */
+    width: auto;
+    margin-bottom: 20px; /* Este número negativo "tira" del título hacia arriba. Ajustalo a ojo. */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Texto pequeño superior */
 
 .eyebrow {
@@ -432,6 +441,7 @@ footer p {
 
     margin-top: 25px;
 }
+
 
 
 /* ========================================
