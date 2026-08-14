@@ -45,7 +45,7 @@ body {
     justify-content: flex-start; /* Esto empuja los enlaces hacia la izquierda */
     align-items: center;
     
-    padding: 15px 8%; /* Puedes achicar el 8% si lo quieres más pegado al borde izquierdo */
+    padding: 18px 8%; /* Puedes achicar el 8% si lo quieres más pegado al borde izquierdo */
     
     background: rgba(17, 16, 14, 0.94);
     backdrop-filter: blur(12px);
