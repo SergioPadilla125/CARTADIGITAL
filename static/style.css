@@ -516,7 +516,7 @@ footer p {
    RESPONSIVE - CELULAR
 ======================================== */
 
-@media (max-width: 520px) {
+@media (max-width: 800px) {
     
     /* ... acá dejas tu código del hero que pusimos antes ... */
 
