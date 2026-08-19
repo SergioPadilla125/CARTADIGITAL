@@ -40,44 +40,18 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-    /* Reducimos el padding vertical de 18px a 12px para achicar la barra */
-    padding: 20px 6%; 
-    
+    justify-content: center;
+
+    padding: 20px 6%;
+
     background: rgba(17, 16, 14, 0.94);
     backdrop-filter: blur(12px);
+
     border-bottom: 1px solid #2e2922;
 }
-
-
-/* Logo */
-
-.brand {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 34px;
-    font-style: italic;
-    color: var(--cream);
-    text-decoration: none;
-    line-height: 0.75;
-}
-
-.brand span {
-    display: block;
-
-    font-family: Montserrat, sans-serif;
-    font-size: 9px;
-    letter-spacing: 4px;
-    font-style: normal;
-    text-align: center;
-
-    margin-top: 9px;
-}
-
-
-/* Links del menú */
 
 .nav nav {
     display: flex;
@@ -90,6 +64,12 @@ body {
 
     font-size: 12px;
     letter-spacing: 1px;
+
+    transition: color 0.25s ease;
+}
+
+.nav nav a:hover {
+    color: var(--gold);
 }
 
 
@@ -99,11 +79,15 @@ body {
 
 .hero {
     min-height: 80vh;
+
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra todo horizontalmente */
-    text-align: center;      /* Centra el texto */
+    justify-content: center;
+
+    text-align: center;
+
     padding: 80px 8%;
+
     background:
         linear-gradient(
             90deg,
@@ -116,22 +100,28 @@ body {
 
 .hero-copy {
     max-width: 720px;
+
     display: flex;
     flex-direction: column;
-    align-items: center; /* Asegura que el botón quede bien centrado */
-    animation: fadeInUp 1s ease-out forwards; /* Llama a la animación */
+    align-items: center;
+
+    animation: fadeInUp 1s ease-out forwards;
 }
-/* Logo gigante en la sección de inicio */
+
+
+/* Logo del hero */
 
 .hero-logo {
-    height: 90px; /* Sube este valor para hacerlo del tamaño que quieras */
+    height: 115px;
     width: auto;
-    margin-bottom: 20px; /* Este número negativo "tira" del título hacia arriba. Ajustalo a ojo. */
+
+    margin: 0 auto 20px;
+
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
-/* Texto pequeño superior */
+
+
+/* Texto pequeño */
 
 .eyebrow {
     color: var(--gold);
@@ -149,6 +139,7 @@ body {
 
     font-size: clamp(48px, 7vw, 88px);
     line-height: 0.92;
+
     font-weight: 500;
 
     margin: 22px 0;
@@ -185,20 +176,24 @@ body {
 
     font-size: 11px;
     letter-spacing: 2px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.button:hover {
+    background: var(--gold);
+    color: var(--bg);
+    transform: translateY(-2px);
 }
 
 
 /* ========================================
-   INTRODUCCIÓN LOGO INICIO
+   INTRODUCCIÓN
 ======================================== */
-.brand img {
-    /* Forzamos una altura máxima pequeña para que el espacio transparente no infle la barra */
-    height: 70px; 
-    width: auto; /* El ancho se calcula automáticamente para no deformarse */
-    display: block;
-    object-fit: contain; 
 
-}
 .intro {
     max-width: 850px;
 
@@ -220,6 +215,7 @@ body {
 
 .intro p:last-child {
     color: var(--muted);
+
     line-height: 1.8;
 }
 
@@ -246,7 +242,7 @@ body {
     border-bottom: 1px solid var(--line);
 
     padding-bottom: 18px;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .section-title span {
@@ -265,7 +261,7 @@ body {
 
 
 /* ========================================
-   CARTAS CON IMAGEN
+   CAFÉS / TARJETAS CON IMAGEN
 ======================================== */
 
 .grid {
@@ -273,7 +269,7 @@ body {
 
     grid-template-columns: repeat(4, 1fr);
 
-    gap: 18px;
+    gap: 22px;
 }
 
 
@@ -283,6 +279,22 @@ body {
     background: var(--panel);
 
     border: 1px solid #332a20;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--gold);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
 }
 
 
@@ -296,13 +308,19 @@ body {
     object-fit: cover;
 
     display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.03);
 }
 
 
 /* Contenido */
 
 .card-body {
-    padding: 17px;
+    padding: 20px;
 }
 
 
@@ -312,8 +330,9 @@ body {
     display: flex;
 
     justify-content: space-between;
+    align-items: flex-start;
 
-    gap: 10px;
+    gap: 12px;
 }
 
 
@@ -323,9 +342,11 @@ body {
 .list-card h3 {
     margin: 0;
 
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    line-height: 1.3;
 }
 
 
@@ -348,7 +369,51 @@ body {
     font-size: 12px;
     line-height: 1.6;
 
+    margin-top: 10px;
     margin-bottom: 0;
+}
+
+
+/* ========================================
+   VARIANTES DE PRECIOS
+======================================== */
+
+.precios-multiples {
+    margin-top: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.precio-item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px dotted #ffffff33;
+
+    padding-bottom: 6px;
+}
+
+.precio-item:last-child {
+    border-bottom: none;
+}
+
+.precio-item .opcion-nombre {
+    font-size: 0.9rem;
+
+    color: #a09d98;
+
+    font-weight: 500;
+}
+
+.precio-item .price strong {
+    font-size: 1rem;
+
+    color: var(--gold);
 }
 
 
@@ -365,36 +430,6 @@ body {
     padding-right: calc((100% - 1180px) / 2 + 6%);
 }
 
-/* ========================================
-   VARIANTES DE PRECIOS (Chico, Grande, etc.)
-======================================== */
-.precios-multiples {
-    margin-top: 15px; /* Lo separa un poco de la descripción */
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espacio entre cada opción */
-}
-
-.precio-item {
-    display: flex;
-    justify-content: space-between; /* Texto a los extremos */
-    align-items: center;
-    border-bottom: 1px dotted #ffffff33; /* Línea punteada muy sutil */
-    padding-bottom: 5px;
-}
-
-.precio-item .opcion-nombre {
-    font-size: 0.95rem;
-    color: rgb(160, 157, 152); /* Color gris claro/crema, para que no compita con el precio */
-    font-weight: 500;
-}
-
-/* El precio hereda automáticamente tu estilo de <strong>, 
-   pero nos aseguramos de que no quede gigante */
-.precio-item .price strong {
-    font-size: 1rem;
-    color: #b99869; 
-}
 
 /* ========================================
    LISTA DE PRODUCTOS
@@ -424,7 +459,7 @@ body {
 
 
 /* ========================================
-   SECCIÓN VISITANOS / INFORMACIÓN
+   VISITANOS
 ======================================== */
 
 .visit {
@@ -462,16 +497,35 @@ footer {
     color: var(--muted);
 }
 
-footer .brand {
-    display: inline-block;
-}
-
 footer p {
     font-size: 11px;
 
     margin-top: 25px;
 }
 
+footer .brand img {
+    height: 45px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ========================================
+   ANIMACIÓN
+======================================== */
+
+@keyframes fadeInUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 /* ========================================
@@ -482,36 +536,54 @@ footer p {
 
     .nav {
         flex-direction: column;
+
         gap: 12px;
-        padding: 14px 5%;
+
+        padding: 15px 5%;
     }
 
     .nav nav {
         display: flex;
+
         width: 100%;
+
         justify-content: center;
-        gap: 14px;
+
+        gap: 15px;
+
         flex-wrap: wrap;
     }
 
     .nav nav a {
-        font-size: 11px;
+        font-size: 12px;
+
         letter-spacing: 0.5px;
     }
+
+
+    .hero {
+        min-height: 72vh;
+
+        padding: 70px 7%;
+    }
+
 
     .grid {
         grid-template-columns: 1fr 1fr;
     }
+
 
     .list-grid,
     .visit {
         grid-template-columns: 1fr;
     }
 
+
     .alt {
         padding-left: 7%;
         padding-right: 7%;
     }
+
 
     .intro,
     .menu-section,
@@ -520,10 +592,12 @@ footer p {
         padding-bottom: 65px;
     }
 
+
     .section-title h2 {
         font-size: 34px;
     }
 }
+
 
 /* ========================================
    RESPONSIVE - CELULAR
@@ -531,37 +605,99 @@ footer p {
 
 @media (max-width: 520px) {
 
-
-    .nav nav {
-        gap: 14px;
+    .nav {
+        padding: 14px 3%;
     }
 
+    .nav nav {
+        gap: 13px;
+
+        flex-wrap: nowrap;
+
+        justify-content: center;
+    }
 
     .nav nav a {
         font-size: 12px;
-        letter-spacing: 0.5px;
-    }
 
-
-    .grid {
-        grid-template-columns: 1fr;
+        letter-spacing: 0.5;
     }
 
 
     .hero {
         height: 95vh !important;
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero-logo {
+        height: 95px;
+
+        margin-bottom: 25px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+
+        line-height: 0.95;
+
+        width: 100%;
+
+        max-width: 430px;
+    }
+
+    .hero p:not(.eyebrow) {
+        font-size: 14px;
+
+        line-height: 1.7;
     }
 
 
-   .hero h1 {
-    font-size: 44px;
-    line-height: 0.95;
-    width: 100%;
-    max-width: 420px;
-  }
+    .grid {
+        grid-template-columns: 1fr;
 
+        gap: 24px;
+    }
+
+
+    .card {
+        border-radius: 8px;
+    }
 
     .card img {
         aspect-ratio: 4 / 3;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+
+    .precio-item .opcion-nombre {
+        font-size: 14px;
+    }
+
+    .precio-item .price strong {
+        font-size: 16px;
+    }
+
+
+    .menu-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
     }
 }
