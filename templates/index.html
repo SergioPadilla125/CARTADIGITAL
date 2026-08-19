@@ -20,6 +20,7 @@
     <a href="#cafes">Cafés</a>
     <a href="#promocion">Promociones</a>
     <a href="#pasteleria">Pastelería</a>
+    <a href="#te">Té</a>
   </nav>
 </header>
 
@@ -41,20 +42,44 @@
     <p>Explorá nuestros cafés, desayunos, pastelería y bebidas. Los precios de este prototipo son ilustrativos y pueden reemplazarse por los precios reales.</p>
   </section>
 
-  <section id="cafes" class="menu-section">
+<section id="cafes" class="menu-section">
     <div class="section-title"><span></span><h2>Cafés de especialidad</h2></div>
     <div class="grid">
       {% for item in menu.cafes %}
       <article class="card">
         <img src="{{ item.image }}" alt="{{ item.name }}" loading="lazy">
         <div class="card-body">
-          <div class="card-top"><h3>{{ item.name }}</h3><strong>${{ "{:,}".format(item.price).replace(",", ".") }}</strong></div>
+          
+          <div class="card-top">
+            <h3>{{ item.name }}</h3>
+            <!-- Condición 1: Si NO hay precios múltiples, muestra el precio normal arriba -->
+            {% if not item.precios_multiples %}
+              <strong>${{ "{:,}".format(item.price).replace(",", ".") }}</strong>
+            {% endif %}
+          </div>
+          
           <p>{{ item.description }}</p>
+
+          <!-- Condición 2: Si SÍ hay precios múltiples, arma la lista acá abajo -->
+          {% if item.precios_multiples %}
+            <div class="precios-multiples">
+              {% for p in item.precios_multiples %}
+              <div class="precio-item">
+                <span class="opcion-nombre">{{ p.opcion }}</span>
+                <!-- Le aplicamos tu mismo filtro de formato matemático al valor -->
+                <span class="price"><strong>${{ "{:,}".format(p.valor).replace(",", ".") }}</strong></span>
+              </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+
         </div>
       </article>
       {% endfor %}
     </div>
   </section>
+
+
 
   <section id="promocion" class="menu-section alt">
     <div class="section-title"><span></span><h2>Promociones</h2></div>

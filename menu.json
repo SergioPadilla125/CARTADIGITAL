@@ -2,45 +2,104 @@
   "cafes": [
     {
       "name": "Espresso",
-      "description": "Intenso, equilibrado y aromático.",
-      "price": 1800,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80"
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2500 }
+      ]
+    },
+    {
+      "name": "Doppio",
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=1200&q=80",
+            "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 3000 }
+      ]
     },
     {
       "name": "Americano",
-      "description": "Café diluido en agua caliente.",
-      "price": 1900,
-      "image": "https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=800&q=80"
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=1200&q=80",
+            "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2000 },
+        { "opcion": "Mediano", "valor": 2500 },
+        { "opcion": "Grande", "valor": 3000 }
+      ]
+      
     },
     {
-      "name": "Cappuccino",
-      "description": "Espresso con leche vaporizada y espuma.",
-      "price": 2400,
-      "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80"
+      "name": "Flat White",
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Grande", "valor": 4200 }
+      ]
     },
-    {
+        {
       "name": "Latte",
-      "description": "Leche vaporizada con un toque de espresso.",
-      "price": 2400,
-      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=800&q=80"
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Mediano", "valor": 3200 },
+        { "opcion": "Grande", "valor": 400 }
+      ]
     },
     {
-      "name": "Mocha",
-      "description": "Chocolate, espresso y leche vaporizada.",
-      "price": 2700,
-      "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=800&q=80"
+      "name": "Latte Caramelo",
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Grande", "valor": 4200 }
+      ]
     },
     {
-      "name": "Cold Brew",
-      "description": "Café frío, suave y refrescante.",
-      "price": 2900,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+      "name": "Dulce de Leche",
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Grande", "valor": 4200 }
+      ]
     },
     {
-      "name": "V60",
-      "description": "Método de filtrado que resalta los sabores del origen.",
-      "price": 3200,
-      "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80"
+      "name": "Capuccino",
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Mediano", "valor": 3200 },
+        { "opcion": "Grande", "valor": 4000 }
+      ]
+    },
+    {
+      "name": "Mocaccino",
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Grande", "valor": 4200 }
+      ]
+    },
+    {
+      "name": "SubMarino",
+      "description": ".",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2500 },
+        { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Grande", "valor": 4000 }
+      ]
     }
   ],
   "promocion": [

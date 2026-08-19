@@ -365,6 +365,36 @@ body {
     padding-right: calc((100% - 1180px) / 2 + 6%);
 }
 
+/* ========================================
+   VARIANTES DE PRECIOS (Chico, Grande, etc.)
+======================================== */
+.precios-multiples {
+    margin-top: 15px; /* Lo separa un poco de la descripción */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre cada opción */
+}
+
+.precio-item {
+    display: flex;
+    justify-content: space-between; /* Texto a los extremos */
+    align-items: center;
+    border-bottom: 1px dotted #ffffff33; /* Línea punteada muy sutil */
+    padding-bottom: 5px;
+}
+
+.precio-item .opcion-nombre {
+    font-size: 0.95rem;
+    color: rgb(160, 157, 152); /* Color gris claro/crema, para que no compita con el precio */
+    font-weight: 500;
+}
+
+/* El precio hereda automáticamente tu estilo de <strong>, 
+   pero nos aseguramos de que no quede gigante */
+.precio-item .price strong {
+    font-size: 1rem;
+    color: #b99869; 
+}
 
 /* ========================================
    LISTA DE PRODUCTOS
