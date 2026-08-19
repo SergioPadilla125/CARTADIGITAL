@@ -552,9 +552,12 @@ footer p {
     }
 
 
-    .hero h1 {
-        font-size: 52px;
-    }
+   .hero h1 {
+    font-size: 44px;
+    line-height: 0.95;
+    width: 100%;
+    max-width: 420px;
+  }
 
 
     .card img {
