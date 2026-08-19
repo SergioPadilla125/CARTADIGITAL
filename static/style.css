@@ -55,23 +55,50 @@ body {
 
 .nav nav {
     display: flex;
-    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .nav nav a {
+    position: relative;
+
     color: var(--cream);
     text-decoration: none;
 
     font-size: 12px;
-    letter-spacing: 1px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+
+    padding: 8px 0;
 
     transition: color 0.25s ease;
+}
+
+.nav nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 1px;
+
+    background: var(--gold);
+
+    transform: translateX(-50%);
+
+    transition: width 0.25s ease;
 }
 
 .nav nav a:hover {
     color: var(--gold);
 }
 
+.nav nav a:hover::after {
+    width: 100%;
+}
 
 /* ========================================
    HERO / INICIO
