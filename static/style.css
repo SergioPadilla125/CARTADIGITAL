@@ -480,46 +480,38 @@ footer p {
 
 @media (max-width: 800px) {
 
-    /* Navegación */
+    .nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 5%;
+    }
 
     .nav nav {
-        display: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
     }
 
-
-    /* Hero */
-
-    .hero {
-        min-height: 72vh;
-
-        padding: 70px 7%;
+    .nav nav a {
+        font-size: 11px;
+        letter-spacing: 0.5px;
     }
-
-
-    /* Productos */
 
     .grid {
         grid-template-columns: 1fr 1fr;
     }
-
-
-    /* Listas */
 
     .list-grid,
     .visit {
         grid-template-columns: 1fr;
     }
 
-
-    /* Sección alternativa */
-
     .alt {
         padding-left: 7%;
         padding-right: 7%;
     }
-
-
-    /* Espaciado */
 
     .intro,
     .menu-section,
@@ -528,14 +520,10 @@ footer p {
         padding-bottom: 65px;
     }
 
-
-    /* Títulos */
-
     .section-title h2 {
         font-size: 34px;
     }
 }
-
 
 /* ========================================
    RESPONSIVE - CELULAR
@@ -543,21 +531,32 @@ footer p {
 
 @media (max-width: 520px) {
 
-    /* Productos */
+
+    .nav nav {
+        gap: 10px;
+    }
+
+
+    .nav nav a {
+        font-size: 10px;
+    }
+
+
     .grid {
         grid-template-columns: 1fr;
     }
 
-    /* Hero (Aquí forzamos la altura completa para el celular) */
+
     .hero {
         height: 95vh !important;
     }
+
 
     .hero h1 {
         font-size: 52px;
     }
 
-    /* Imágenes */
+
     .card img {
         aspect-ratio: 4 / 3;
     }
