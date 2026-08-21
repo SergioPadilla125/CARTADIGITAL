@@ -421,7 +421,7 @@ body {
 
     margin: 0;
 
-    background: #14110f;
+    background: #191714;
 }
 
 #cafes::before {
@@ -433,7 +433,7 @@ body {
     background-repeat: repeat;
     background-size: 220px;
 
-    opacity: 0.08;
+    opacity: 0.10;
     pointer-events: none;
 
     z-index: 0;

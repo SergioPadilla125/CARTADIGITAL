@@ -127,37 +127,50 @@
    "ice_latte": [
     {
       "name": "Ice Latte Clasico",
+      "description": "Espresso con leche fría y hielo, suave, cremoso y refrescante.",
       "precios_multiples": 
       [
-        { "opcion": "Chico", "valor": 2500 }
+        { "opcion": "", "valor": 3800 }
       ]
     },
     {
       "name": "Ice Latte de Frambuesa",
+      "description": "Espresso con leche fría, hielo y un toque de frambuesa, dulce, frutal y refrescante.",
       "precios_multiples": 
       [
-        { "opcion": "Chico", "valor": 2500 }
+        { "opcion": "", "valor": 4000 }
       ]
     },
     {
       "name": "Ice Latte de Dulce de Leche",
+      "description": "Espresso con leche fría, hielo y dulce de leche, cremoso, dulce e intenso.",
       "precios_multiples": 
       [
-        { "opcion": "Chico", "valor": 2500 }
+        { "opcion": "", "valor": 4000 }
       ]
     },
     {
       "name": "Ice Latte Caramel",
+      "description": "Espresso con leche fría, hielo y caramelo, suave, dulce y equilibrado.",
       "precios_multiples": 
       [
-        { "opcion": "Chico", "valor": 2500 }
+        { "opcion": "", "valor": 4000 }
       ]
     },
     {
       "name": "Ice Latte De Chocolate",
+      "description": "Espresso con leche fría, hielo y chocolate, cremoso, intenso y refrescante.",
       "precios_multiples": 
       [
-        { "opcion": "Chico", "valor": 2500 }
+        { "opcion": "", "valor": 4000 }
+      ]
+    },
+    {
+      "name": "Frapuccino",
+      "description": "Bebida fría y cremosa a base de café, leche y hielo, de textura suave y refrescante.",
+      "precios_multiples": 
+      [
+        { "opcion": "", "valor": 4000 }
       ]
     }
    ],
