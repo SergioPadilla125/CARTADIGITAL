@@ -625,14 +625,22 @@ footer .brand img {
 ======================================== */
 
 @media (max-width: 800px) {
-    
-        .contacto {
-        grid-template-columns: 1fr;
-        gap: 45px;
 
-        padding-top: 65px;
-        padding-bottom: 65px;
+    .contacto {
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        padding: 60px 7%;
     }
+
+    .contacto-item {
+        width: 100%;
+    }
+
+    .contacto-item h2 {
+        font-size: 30px;
+    }
+
 
     .nav {
         flex-direction: column;
@@ -722,13 +730,7 @@ footer .brand img {
 
         letter-spacing: 0.5;
     }
-     .contacto {
-        grid-template-columns: 1fr;
-        gap: 45px;
 
-        padding-top: 65px;
-        padding-bottom: 65px;
-    }
 
     .hero {
         height: 95vh !important;
@@ -806,4 +808,25 @@ footer .brand img {
     .section-title h2 {
         font-size: 32px;
     }
+
+    .contacto {
+        grid-template-columns: 1fr;
+        gap: 35px;
+
+        padding: 50px 5%;
+    }
+
+    .contacto-item {
+        width: 100%;
+    }
+
+    .contacto-item h2 {
+        font-size: 28px;
+    }
+
+    .contacto-button {
+        width: 100%;
+        justify-content: center;
+    }
+
 }
