@@ -295,6 +295,7 @@ body {
    CAFÉS / TARJETAS CON IMAGEN
 ======================================== */
 
+
 .grid {
     display: grid;
 
@@ -411,10 +412,46 @@ body {
     margin-bottom: 0;
 }
 
+#cafes {
+    position: relative;
+    overflow: hidden;
+
+    max-width: none;
+    width: 100%;
+
+    margin: 0;
+
+    background: #14110f;
+}
+
+#cafes::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("fondocafe.jpg");
+    background-repeat: repeat;
+    background-size: 220px;
+
+    opacity: 0.08;
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+#cafes > * {
+    position: relative;
+    z-index: 1;
+}
+
+
 
 /* ========================================
    VARIANTES DE PRECIOS
 ======================================== */
+
+
+
 
 .precios-multiples {
     margin-top: 18px;
