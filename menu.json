@@ -26,17 +26,21 @@
       [
         { "opcion": "Chico", "valor": 2000 },
         { "opcion": "Mediano", "valor": 2500 },
+        { "opcion": "Mediano-Grande", "valor": 2800 },
         { "opcion": "Grande", "valor": 3000 }
-      ]
-      
-    },
-    {
+      ]     
+    } 
+  ],
+  "Cafes_con_Leche": [
+      {
       "name": "Flat White",
       "description": "Doble shot de espresso con leche texturizada y una fina capa de espuma, intenso, cremoso y equilibrado.",
       "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
       "precios_multiples": 
       [
-        { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Chico", "valor": 3000 },
+        { "opcion": "Mediano", "valor": 3700 },
+        { "opcion": "Mediano-Grande", "valor": 4000 },
         { "opcion": "Grande", "valor": 4200 }
       ]
     },
@@ -47,6 +51,7 @@
       "precios_multiples": 
       [
         { "opcion": "Mediano", "valor": 3200 },
+        { "opcion": "Mediano-Grande", "valor": 3800 },
         { "opcion": "Grande", "valor": 4000 }
       ]
     },
@@ -57,6 +62,7 @@
       "precios_multiples": 
       [
         { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Mediano-Grande", "valor": 4000 },
         { "opcion": "Grande", "valor": 4200 }
       ]
     },
@@ -67,6 +73,7 @@
       "precios_multiples": 
       [
         { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Mediano-Grande", "valor": 4000 },
         { "opcion": "Grande", "valor": 4200 }
       ]
     },
@@ -77,6 +84,7 @@
       "precios_multiples": 
       [
         { "opcion": "Mediano", "valor": 3200 },
+        { "opcion": "Mediano-Grande", "valor": 3800 },
         { "opcion": "Grande", "valor": 4000 }
       ]
     },
@@ -87,6 +95,7 @@
       "precios_multiples": 
       [
         { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Mediano-Grande", "valor": 4000 },
         { "opcion": "Grande", "valor": 4200 }
       ]
     },
@@ -98,57 +107,122 @@
       [
         { "opcion": "Chico", "valor": 2500 },
         { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Mediano-Grande", "valor": 3800 },
+        { "opcion": "Grande", "valor": 4000 }
+      ]
+    },
+    {
+      "name": "Lágrima",
+      "description": "Leche caliente y espuma con una delicada lágrima de espresso",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=80",
+      "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2500 },
+        { "opcion": "Mediano", "valor": 3500 },
+        { "opcion": "Mediano-Grande", "valor": 3800 },
         { "opcion": "Grande", "valor": 4000 }
       ]
     }
   ],
-  "promocion": [
+   "ice_latte": [
     {
-      "name": "Tostadas clásicas",
-      "description": "Pan de campo, palta, huevo poche y semillas.",
-      "price": 3800
+      "name": "Ice Latte Clasico",
+      "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2500 }
+      ]
     },
     {
-      "name": "Yogur con granola",
-      "description": "Yogur natural, granola casera, frutas de estación y miel.",
-      "price": 3200
+      "name": "Ice Latte de Frambuesa",
+      "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2500 }
+      ]
     },
     {
-      "name": "Medialunas",
-      "description": "Mantecosas y crocantes, recién horneadas.",
-      "price": 2200
+      "name": "Ice Latte de Dulce de Leche",
+      "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2500 }
+      ]
     },
     {
-      "name": "Avocado Toast",
-      "description": "Pan de masa madre, palta, tomate cherry y semillas.",
-      "price": 4200
+      "name": "Ice Latte Caramel",
+      "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2500 }
+      ]
+    },
+    {
+      "name": "Ice Latte De Chocolate",
+      "precios_multiples": 
+      [
+        { "opcion": "Chico", "valor": 2500 }
+      ]
+    }
+   ],
+
+   "promocion": [
+    {
+      "name": "Latte + 2 Medialunas",
+      "price": 4500
+    },
+    {
+      "name": "?",
+      "description": "?",
+      "price": 0
+    },
+    {
+      "name": "?",
+      "description": "?",
+      "price": 0
+    },
+    {
+      "name": "?",
+      "description": "?",
+      "price": 0
     }
   ],
   "pasteleria": [
     {
-      "name": "Cheesecake",
-      "description": "Cremoso cheesecake con salsa de frutos rojos.",
-      "price": 3600
+      "name": "Cookies:",
+      "description": "-Nutella,-Red Velvet,-Frutos Rojos,-Oreo,-Malvaviscos,Pistachos,-Dulce de leche,-3 chocolates",
+      "price": 3500
+    },
+    {
+      "name": "Lemonie",
+      "description": "",
+      "price": 1000
+    },
+    {
+      "name": "Carrot Cake",
+      "description": "",
+      "price": 2000
     },
     {
       "name": "Brownie",
-      "description": "Con nueces y chocolate semiamargo.",
-      "price": 3200
+      "description": ".",
+      "price": 1500
     },
     {
-      "name": "Lemon Pie",
-      "description": "Curd de limón con merengue italiano.",
-      "price": 3400
+      "name": "Medialunas",
+      "description": "",
+      "price": 1200
     },
     {
-      "name": "Cookie artesanal",
-      "description": "Cookie con chips de chocolate.",
-      "price": 2200
-    },
-    {
-      "name": "Cookie Red Velvet",
-      "description": "Galleta de chocolate rojo con chips de chocolate blanco.",
+      "name": "Alfajores",
+      "description": "",
       "price": 0
+    },
+    {
+      "name": "Mafalda",
+      "description": "",
+      "price": 2500
+    },
+    {
+      "name": "Churros",
+      "description": "",
+      "price": 1500
     }
   ]
 }
