@@ -625,6 +625,14 @@ footer .brand img {
 ======================================== */
 
 @media (max-width: 800px) {
+    
+        .contacto {
+        grid-template-columns: 1fr;
+        gap: 45px;
+
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
 
     .nav {
         flex-direction: column;
@@ -714,7 +722,13 @@ footer .brand img {
 
         letter-spacing: 0.5;
     }
+     .contacto {
+        grid-template-columns: 1fr;
+        gap: 45px;
 
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
 
     .hero {
         height: 95vh !important;
