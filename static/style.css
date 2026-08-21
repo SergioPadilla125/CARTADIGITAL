@@ -537,24 +537,41 @@ body {
    VISITANOS
 ======================================== */
 
-.visit {
+.contacto {
+    max-width: 1180px;
+    margin: auto;
+
+    padding: 80px 6%;
+
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 
     border-top: 1px solid var(--line);
 }
 
-.visit h2 {
-    font-size: 34px;
+.contacto-item h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
-.visit p:not(.eyebrow) {
+.contacto-item p:not(.eyebrow) {
     color: var(--muted);
-
     line-height: 1.7;
+}
+
+.contacto-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.instagram-button svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
 }
 
 
